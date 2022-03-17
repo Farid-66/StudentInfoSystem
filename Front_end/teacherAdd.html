@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PreSkool</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+
+        <div class="header_left">
+            <div class="header_mobile_btn">
+                <a href="#" class="mobile_btn"><i class="fas fa-bars"></i></a>
+            </div>
+            <a href="adminDashboard.html">
+                <img src="Image/logo-small.png" class="logo" alt="">
+            </a>
+            <div></div>
+        </div>
+        <div class="header_btn">
+            <a href="#" class="header_link"><i class="fas fa-align-left"></i></a>
+        </div>
+        <div class="header_search">
+            <form action="">
+                <input type="search" placeholder="Search here">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="header_user_menu">
+            <a href="#" id="drop_btn">
+                <img src="Image/avatar-01.jpg" alt="">
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <div class="dropdown_user">
+                <div class="user_header">
+                    <div class="user_avatar">
+                        <img src="Image/avatar-01.jpg" alt="">
+                    </div>
+                    <div class="user_text">
+                        <p><b>Ryan Taylor</b></p>
+                        <span>Administrator</span>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#" class="dropdown_item">My Profile</a></li>
+                    <li><a href="#" class="dropdown_item">Logout</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar start -->
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="sidmenu-title">
+                        <h6>Main Menu</h5>
+                    </li>
+
+                    <li class="sidmenu-item"><a href="#" class="sidmenu-link sidmenu_link_All"><i
+                                class="fas fa-user-graduate"></i>
+                            <span>Students</span>
+                            <span class="fa-solid fa-angle-right"></span></a>
+                        <ul class="sublimenu">
+                            <li><a href="studentList.html">Student List</a></li>
+                            <li><a href="studentAdd.html">Student Add</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidmenu-item"><a href="#" class="sidmenu-link sidmenu_link_All"><i
+                                class="fas fa-chalkboard-teacher"></i>
+                            <span>Teachers</span>
+                            <span class="fa-solid fa-angle-right"></span></a>
+                        <ul class="sublimenu">
+                            <li><a href="teacherList.html">Teacher List</a></li>
+                            <li><a href="teacherAdd.html">Teacher Add</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidmenu-item"><a href="#" class="sidmenu-link sidmenu_link_All"><i
+                                class="fas fa-building"></i>
+                            <span>Departments</span>
+                            <span class="fa-solid fa-angle-right"></span></a>
+                        <ul class="sublimenu">
+                            <li><a href="departmentList.html">Department List</a></li>
+                            <li><a href="departmentAdd.html">Department Add</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidmenu-item"><a href="#" class="sidmenu-link sidmenu_link_All"><i
+                                class="fas fa-book-reader"></i>
+                            <span>Subjects</span>
+                            <span class="fa-solid fa-angle-right"></span></a>
+                        <ul class="sublimenu">
+                            <li><a href="subjectList.html">Subject List</a></li>
+                            <li><a href="subjectAdd.html">Subject Add</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="sidmenu-title">
+                        <h6>Management</h5>
+                    </li>
+
+                    <li class="sidmenu-item"><a href="#" class="sidmenu-link sidmenu_link_All"><i
+                                class="fas fa-file-invoice-dollar"></i>
+                            <span>Accounts</span>
+                            <span class="fa-solid fa-angle-right"></span></a>
+                        <ul class="sublimenu">
+                            <li><a href="#">Fees</a></li>
+                            <li><a href="#">Expenses</a></li>
+                            <li><a href="#">Salary</a></li>
+                            <li><a href="#">Add Fees</a></li>
+                            <li><a href="#">Add Expenses</a></li>
+                            <li><a href="#">Add Salary</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidmenu-item"><a href="#" class="sidmenu_link_All"><i class="fas fa-comment-dollar"></i>
+                            <span>Fees</span></a>
+                    </li>
+                    <li class="sidmenu-item"><a href="#" class="sidmenu_link_All"><i class="fas fas fa-holly-berry"></i>
+                            <span>Holiday</span></a>
+                    </li>
+                    <li class="sidmenu-item"><a href="#" class="sidmenu_link_All"><i class="fas fa-clipboard-list"></i>
+                            <span>Exam
+                                List</span></a></li>
+                    <li class="sidmenu-item"><a href="#" class="sidmenu_link_All"><i class="fas fa-calendar-day"></i>
+                            <span>Events</span></a>
+                    </li>
+                    <li class="sidmenu-item"><a href="#" class="sidmenu_link_All"><i class="fas fa-book"></i>
+                            <span>Library</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Sidebar End -->
+
+    <!-- Main Page Start -->
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 page_title">
+                    <div>
+                        <h2>Add Teachers</h2>
+                    <p class="d-none d-sm-block"><a href="teacherList.html">Teachers</a> / Add Teachers</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-12">
+                    <div class="card_body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2><span>Basic Details</span></h2>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">First Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Teacher ID</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Gender</label>
+                                    <select class="form-select" id="" multiple>
+                                        <option selected value="">Select Gender</option>
+                                        <option value="">Female</option>
+                                        <option value="">Male</option>
+                                    </select>
+                                    
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Mobile Number</label>
+                                    <input type="tel" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Qualification</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Joining Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Experience</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="formFile" class="form-label">Teacher Image</label>
+                                    <input class="form-control" style="height: auto;" type="file" id="formFile">
+                                </div>
+    
+                                <div class="col-12">
+                                    <h2><span>Login Details</span></h2>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Username</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Email ID</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Repeat Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <h2><span>Address</span></h2>
+                                </div>
+                                <div class="col-12">
+                                    <label for="" class="form-label">Address</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">City</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">State</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Zip Code</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="" class="form-label">Country</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn_submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Main Page End -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

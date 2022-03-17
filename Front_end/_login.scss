@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  .loginbox {
+    margin: 0 auto;
+    width: 800px;
+    box-shadow: 0 0 13px -8px black;
+    .row {
+      .login_left {
+        background-image: url(Image/login.jpg);
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #18aefa;
+        background-blend-mode: multiply;
+      }
+      .login_right {
+        text-align: center;
+        padding: 40px;
+
+        h3 {
+          font-size: 26px;
+          font-weight: 500;
+          font-family: $font-family;
+        }
+        p {
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 30px;
+          color: #4c4c4c;
+
+          a {
+            color: #4c4c4c;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        form {
+          input {
+            width: 100%;
+            height: 40px;
+            padding: 6px 12px;
+            margin-bottom: 20px;
+            font-family: $font-family;
+            font-size: 15px;
+            font-weight: 500;
+            &:focus{
+              border-color: $color-orange;
+              box-shadow: none;
+            }
+          }
+
+          button {
+            width: 100%;
+            margin-bottom: 40px;
+            background-color: $color-orange;
+            border-color: $color-orange;
+            &:hover {
+              background-color: $main-color;
+              border-color: $main-color;
+            }
+          }
+        }
+
+        .login_or {
+          position: relative;
+          p {
+            color: #a0a0a0;
+            span {
+              background-color: rgb(255, 255, 255);
+              position: relative;
+              padding: 0px 10px;
+              z-index: 1;
+            }
+            &::before {
+              content: "";
+              width: 100%;
+              height: 1px;
+              background-color: #a0a0a0;
+              display: inline-block;
+              position: absolute;
+              top: 12px;
+              left: 0px;
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
